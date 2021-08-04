@@ -2,7 +2,7 @@
 
 <p align="center">
 
-<img src="./logo.png">
+<img alt="spec-up logo" src="./logo.png">
 
 <h3 style="display: block; margin: 0 auto; text-align: center;">Markdown » Spec-Up</h3>
 
@@ -35,5 +35,6 @@ Using Spec-Up is easy peasy lemon squeezy:
             }
             ```
 3. In your main node.js file, or as a package.json script entry, use this invocation call: `require('spec-up')()`
+4. `npm run edit`
 
 Boom! That's it. Spec-Up will auto-detect modifications to files in your `spec_directory` and auto-generate your spec's updated HTML document every time you save a change.
