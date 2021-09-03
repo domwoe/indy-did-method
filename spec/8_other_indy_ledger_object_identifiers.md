@@ -11,7 +11,7 @@ The structure of identifiers for all non-DID Indy ledger objects is the followin
 The components of the DID URL are:
 
 - `<did>` the `did:indy` DID of the object-owning controller
-- `<object-type>` one of `SCHEMA`, `CLAIM_DEF`, `REV_REG_DEF`, `REV_REG_ENTRY`, `ATTRIB`
+- `<object-type>` one of [[ref: SCHEMA]], [[ref: CLAIM_DEF]], [[ref: REV_REG_DEF]], [[ref: REV_REG_ENTRY]], [[ref: ATTRIB]]
 - `<object-type-identifier>` an object type unique identifier defined by Indy by object type.
 
 The data returned from resolving such DID URLs is the ledger object and relevant state proof; the same data returned from the Indy Node read object transactions, such as the [GET_SCHEMA](https://hyperledger-indy.readthedocs.io/projects/node/en/latest/requests.html#get-schema) transaction, and dependent on the type of the object.
@@ -34,7 +34,7 @@ Existing identifier: `F72i3Y3Q4i466efjYJYCHM:2:npdb:4.3.4`
 
 - `2` is the enumerated object type
 - `npdb` is the client-defined schema name
-- `4.3.4` is the client-defined tag for the SCHEMA
+- `4.3.4` is the client-defined tag for the [[ref: SCHEMA]]
 
 #### Claim Def:
 
@@ -49,7 +49,7 @@ Existing identifier: `did:indy:sovrin:5nDyJVP1NrcPAttP3xwMB9:3:CL:56495:npdb`
 - `56495` is the sequence number for the Schema object used by this Claim Def
 - `npdb` is the client-defined claim def name
 
-Note that the DID URL format adds a constraint on the client-defined claim def name from the `did:sov` DID Method. Specifically, the same named claim def can no longer be associated with different SCHEMA objects.
+Note that the DID URL format adds a constraint on the client-defined claim def name from the `did:sov` DID Method. Specifically, the same named claim def can no longer be associated with different [[ref: SCHEMA]] objects.
 
 #### Revocation Registry Definition:
 
@@ -83,11 +83,11 @@ Existing Identifier: `5:5nDyJVP1NrcPAttP3xwMB9:4:5nDyJVP1NrcPAttP3xwMB9:3:CL:564
 
 #### ATTRIB:
 
-DID URL: [`did:indy:sovrin:5nDyJVP1NrcPAttP3xwMB9/ATTRIB/<raw>`](https://indyscan.io/tx/SOVRIN_MAINNET/domain/54743), where `<raw>` is the name of the JSON object that is the value of the `raw` ATTRIB value. In the example linked at the start of this paragraph, the `<raw>` value would be `endpoint`.
+DID URL: [`did:indy:sovrin:5nDyJVP1NrcPAttP3xwMB9/ATTRIB/<raw>`](https://indyscan.io/tx/SOVRIN_MAINNET/domain/54743), where `<raw>` is the name of the JSON object that is the value of the `raw` [[ref: ATTRIB]] value. In the example linked at the start of this paragraph, the `<raw>` value would be `endpoint`.
 
 Response: Same as the Indy Node [GET_ATTRIB Txn](https://hyperledger-indy.readthedocs.io/projects/node/en/latest/requests.html#get-attrib). Only the `raw` parameter form of the transaction is supported.
 
 Existing Identifier: `F72i3Y3Q4i466efjYJYCHM:1:b6bf...d9e`
 
 - `1` is the enumerated object type
-- `b6bf...d9e` is an identifier for the ATTRIB, likely a hash of the content
+- `b6bf...d9e` is an identifier for the [[ref: ATTRIB]], likely a hash of the content

@@ -15,14 +15,14 @@ Including a network-specific identifier within an Indy DID identifier enables a 
 
 ### Aligning Indy with the DID Core Specification
 
-The DID Indy method specification formalizes the transformation of an Indy ledger object (a NYM) into a DIDDoc as defined in the DID Core specification from W3C, ensuring that identifiers written to and read from Indy ledgers are W3C standard DIDs.
+The DID Indy method specification formalizes the transformation of an Indy ledger object (a [[ref: NYM]]) into a DIDDoc as defined in the DID Core specification from W3C, ensuring that identifiers written to and read from Indy ledgers are W3C standard DIDs.
 
 ### Resolving a DIDDoc in a single transaction
 
-Previous approaches to resolving Indy ledger objects into DIDDocs required the client read one or more ledger objects (notably, NYMs and ATTRIBs) before assembly. This is at best "challenging" for the client, and at worst, extremely slow without specialized ledger support, particularly when a non-current version of the DID is being resolved. A preferred approach is to enable the resolution of a DID via a single read transaction that returns a single object off the ledger, including a state proof for that object.
+Previous approaches to resolving Indy ledger objects into DIDDocs required the client read one or more ledger objects (notably, [[ref: NYM]]s and [[ref: ATTRIB]]s) before assembly. This is at best "challenging" for the client, and at worst, extremely slow without specialized ledger support, particularly when a non-current version of the DID is being resolved. A preferred approach is to enable the resolution of a DID via a single read transaction that returns a single object off the ledger, including a state proof for that object.
 
 ### Cross-Ledger Object References
 
-The NYM controller of all objects on an Indy ledger MUST reside on the same Indy ledger as the object. Thus, the DID (e.g. the Indy NYM) of the Issuer of a verifiable credential type must reside on the same ledger as the CLAIM_DEF, REV_REG_DEF and REV_REG_ENTRY objects for that type of verifiable credential.
+The [[ref: NYM]] controller of all objects on an Indy ledger MUST reside on the same Indy ledger as the object. Thus, the DID (e.g. the Indy [[ref: NYM]]) of the Issuer of a verifiable credential type must reside on the same ledger as the [[ref: CLAIM_DEF]], [[ref: REV_REG_DEF]] and [[ref: REV_REG_ENTRY]] objects for that type of verifiable credential.
 
-Note that the constraint above does not apply to a SCHEMA referenced by a CLAIM_DEF, since a CLAIM_DEF may use a SCHEMA written by another NYM. As such, a CLAIM_DEF may reference a SCHEMA on a different Indy ledger.
+Note that the constraint above does not apply to a [[ref: SCHEMA]] referenced by a [[ref: CLAIM_DEF]], since a [[ref: CLAIM_DEF]] may use a [[ref: SCHEMA]] written by another [[ref: NYM]]. As such, a [[ref: CLAIM_DEF]] may reference a [[ref: SCHEMA]] on a different Indy ledger.

@@ -4,10 +4,10 @@ Early instances of Indy Networks used the `did:sov` DID Method. The following su
 
 - A `did:indy` DID includes a namespace component that enables resolving a DID to a specific instance of an Indy network (e.g. Sovrin, IDUnion, etc.).
 - `did:indy` DIDs MUST be self-certifying, and that restriction MUST be enforced by the ledger.
-- Identifiers for Indy ledger objects other than NYMs are adjusted to contain a namespace component.
-- The specification includes rules for transforming a NYM into a DIDDoc that meets the DID Core Specification.
-    - An optional NYM data item allows entities to extend the DIDDoc returned from a NYM in arbitrary ways.
+- Identifiers for Indy ledger objects other than [[ref: NYM]]s are adjusted to contain a namespace component.
+- The specification includes rules for transforming a [[ref: NYM]] into a DIDDoc that meets the DID Core Specification.
+    - An optional [[ref: NYM]] data item allows entities to extend the DIDDoc returned from a [[ref: NYM]] in arbitrary ways.
     - The controller can decide whether the DIDDoc will be JSON or JSON-LD.
-    - Before writing a NYM to the ledger, the NYM content is verified to ensure that transforming the NYM to a DIDDoc produces a valid JSON and may include DIDDoc validity checking.
-    - The transformation of a read NYM to a DIDDoc is left to the client of an Indy ledger.
+    - Before writing a [[ref: NYM]] to the ledger, the [[ref: NYM]] content is verified to ensure that transforming the [[ref: NYM]] to a DIDDoc produces a valid JSON and may include DIDDoc validity checking.
+    - The transformation of a read [[ref: NYM]] to a DIDDoc is left to the client of an Indy ledger.
 - A convention for storing Indy network instance config ("genesis") files in a Hyperledger Indy project GitHub repository ("indy-did-networks") is introduced.
