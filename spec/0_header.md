@@ -7,8 +7,10 @@ Indy DID Method
   [https://github.com/hyperledger/indy-did-method](https://github.com/hyperledger/indy-did-method)
 
 **Editors:**
-~ [Stephen Curran](https://github.com/swcurran)
-~ [Ry Jones](https://github.com/ryjones)
+::: todo enter editors
+Input the correct editors here.
+e.g. ~ [Stephen Curran](https://github.com/swcurran)
+:::
 <!-- -->
 **Participate:**
 ~ [GitHub repo](https://github.com/hyperledger/indy-did-method)
