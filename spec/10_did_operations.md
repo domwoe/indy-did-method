@@ -46,6 +46,9 @@ The following are the steps for assembling a DIDDoc from its inputs.
     4. Add the other items of the `diddocContent` to the DIDDoc.
 4. The resulting DIDDoc text must be valid JSON. If not JSON, exit and return an error.
 5. The resulting JSON must be a valid DIDDoc. Perform a `<to be determined>` validation process. If not a DIDDoc, exit and return an error.
+::: warning is this the correct process name
+is `<to be determined>` the correct process name?
+:::
 6. Return the DIDDoc and a success status.
 
 The remainder of this section goes through examples of base DIDDoc template (step 2, above) that is created prior to processing the optional `diddocContent` item, and an example of processing a `diddocContent` item.
@@ -227,3 +230,6 @@ If the parameter `versionTime` is used, the `GET_NYM` transaction is called with
 
 Deactivtion of a `did:indy` DID is done by setting the [[ref: NYM]] verkey to null. Once done, the DIDDoc is not found (per 
 the [DIDDoc Assembly Rules](#DIDDoc Assembly Steps)) and the [[ref: NYM]] cannot be updated again.
+::: warning dead link
+section `#diddoc-assembly-rules` does not exist. Pointing to `#DIDDoc Assembly Steps`
+:::
