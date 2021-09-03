@@ -11,13 +11,17 @@ A NYM object itself does not conform to the [Decentralized Identifiers (DIDs) Co
 
 When reading NYM transaction from the ledger, clients transform / extract the NYM data into a DID document. Often the terms "NYM" and "DID" are used synonymously, although a "NYM" is "just" Hyperledger Indy's specific way of storing DIDs into the ledger.
 
-> TODO: finalize
+::: todo finalize NYM glossary entry
+finalize
+:::
 
 ### ATTRIB
 
 A Hyperledger Indy ATTRIB (short for "attribute") object extends a specific DID (respectively the NYM) of its owner with further information (attributes) and can be [read](https://hyperledger-indy.readthedocs.io/projects/node/en/latest/requests.html#get-attrib) from a Hyplerledger Indy Node by any client. An ATTRIB object can only be [written](https://hyperledger-indy.readthedocs.io/projects/node/en/latest/requests.html#attrib) to a Hyperledger Indy network by an owner of the DID on that network.
 
-> TODO: finalize
+::: todo finalize ATTRIB glossary entry
+finalize
+:::
 
 ### SCHEMA
 
@@ -25,7 +29,9 @@ A SCHEMA object is a template that defines a set of attribute(names) which are g
 
 SCHEMAs define the list of attribute(names) of issued credentials based on a CLAIM_DEF (see below).
 
-> TODO: finalize
+::: todo finalize SCHEMA glossary entry
+finalize
+:::
 
 
 ### CLAIM_DEF
@@ -34,7 +40,9 @@ A CLAIM_DEF (short for "claim definition") object contains data required for cre
 
 Revokable Verifiable Credentials require CLAIM_DEFs which also reference a REV_REG_DEF (see below).
 
-> TODO: finalize
+::: todo finalize CLAIM_DEF glossary entry
+finalize
+:::
 
 ### REV_REG_DEF
 
