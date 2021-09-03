@@ -19,4 +19,6 @@ The requirements for all DID method specifications when authoring the Privacy Co
     - disclosure
     - exclusion
 
-> To Do: Need responses to each section
+::: todo add responses for privacy considerations
+Need responses to each section
+:::
