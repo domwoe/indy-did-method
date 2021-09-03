@@ -1,14 +1,6 @@
 
-
-<p align="center">
-
-<img alt="spec-up logo" src="./logo.png">
-
-<h3 style="display: block; margin: 0 auto; text-align: center;">Markdown » Spec-Up</h3>
-
-</p>
-
-
+Indy DID Method [from https://hackmd.io/2IKUPROnRXW57Lmal_SGaQ](https://hackmd.io/2IKUPROnRXW57Lmal_SGaQ)
+==================
 
 Spec-Up is a technical specification development tool that enables you to create rich specification documents for standards bodies and engineering projects by writing in an extended version of markdown that features all the bells and whistles - for example: advanced syntax highlighting, notice blocks, complex tables, charts, UML diagrams, and more.
 

@@ -1,4 +1,4 @@
-Indy DID Method [from https://hackmd.io/2IKUPROnRXW57Lmal_SGaQ](https://hackmd.io/2IKUPROnRXW57Lmal_SGaQ)
+Indy DID Method
 ==================
 
 **Specification Status:** Strawman
