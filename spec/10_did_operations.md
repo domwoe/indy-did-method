@@ -54,7 +54,7 @@ The remainder of this section goes through examples of base DIDDoc template (ste
 
 The base DIDDoc template is static text that forms a JSON structure. To transform a NYM to its minimal DIDDoc, the Indy network instance's `namespace`, and the NYM values `dest` and `verkey` are inserted into the template as indicated below.
 
-```json=
+```json
 {
   "id": "did:indy:<namespace>:<dest>",
   "verificationMethod": [{
@@ -72,7 +72,8 @@ The base DIDDoc template is static text that forms a JSON structure. To transfor
 
 Assuming values `sovrin` for the `namespace`, `123456` for `dest` and `789abc` for the `verkey` the resulting JSON DIDDoc would be:
 
-```json=
+::: example Base DIDDoc sovrin example
+```json
 {
   "id": "did:indy:sovrin:123456",
   "verificationMethod": [{
@@ -87,12 +88,14 @@ Assuming values `sovrin` for the `namespace`, `123456` for `dest` and `789abc` f
   ]
 }
 ```
+:::
 
 ##### Example Extended DIDDoc Item
 
 An example of a NYM's extended DIDDoc handling is provided below. In the example below, the `diddocContent` item adds a DIDcomm Messaging service endpoint to the resolved DIDDoc. Note that in the example, an `@context` item is included in the `diddocContent`, which causes the result DIDDoc to be a JSON-LD document, rather than plain JSON.
 
-```jsonld=
+::: example Extended DIDDoc Item example
+```jsonld
 "diddocContent" : {
     "@context" : [ 
         "https://www.w3.org/ns/did/v1",
@@ -109,11 +112,12 @@ An example of a NYM's extended DIDDoc handling is provided below. In the example
     ]
   }
 ```
+:::
 
 Applying the DIDDoc assembly rules to the example above produces the following assembled, valid JSON-LD DIDDoc:
 
-
-```jsonld=
+::: example assembled Extended JSON-LD DIDDoc Item  example
+```jsonld
 {
   "@context": [
     "https://www.w3.org/ns/did/v1",
@@ -141,6 +145,7 @@ Applying the DIDDoc assembly rules to the example above produces the following a
   ]
 }
 ```
+:::
 
 #### Key Agreement
 
