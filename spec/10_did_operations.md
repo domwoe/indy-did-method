@@ -151,7 +151,7 @@ Applying the DIDDoc assembly rules to the example above produces the following a
       "priority": 0,
       "serviceEndpoint": "https://example.com",
       "recipientKeys": [ "#verkey" ],
-      "routingKeys": []
+      "routingKeys": [ ]
     }
   ]
 }
@@ -182,7 +182,7 @@ If clients want to continue to retrieve and use the `endpoint` [[ref: ATTRIB]] t
       "priority": 0,
       "serviceEndpoint": "https://example.com",
       "recipientKeys": [ "#verkey" ],
-      "routingKeys": []
+      "routingKeys": [ ]
     }
   ]
 }
